@@ -1,0 +1,15 @@
+server:
+  port: 9191
+spring:
+  profiles:
+    active: test
+
+logging:
+  path: '/Users/jackie/workspace/rome/'
+  file: 'psb_app.log'
+  pattern:
+    console: '%d{yyyy/MM/dd-HH:mm:ss} [%thread] %-5level %logger- %msg%n'
+    file: '%d{yyyy/MM/dd-HH:mm} [%thread] %-5level %logger- %msg%n'
+  # 打印sql语句
+  #level:
+    #com.banner.boke.web.mapper : debug

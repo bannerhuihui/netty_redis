@@ -1,0 +1,16 @@
+type :
+    0. 上线
+    1. 发送QQ消息
+    2. 接收QQ消息
+    3. 发送QQ群列表
+    4. 接收QQ群列表
+
+消息示例：
+    登录：   {"from":"APP_123","type":0}
+    返回消息为：{"login":"success"}
+
+    普通消息：{"content":"我是要发送的内容","from":"PSB_123","subject":"我是主题一","to":["APP_123"],"type":1}
+    返回消息为：{"content":"我是要发送的内容","from":"PSB_123","type":1}
+
+心跳检测：
+    发送消息：{"content":"ping-pong-ping-pang"}
